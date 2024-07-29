@@ -2986,7 +2986,7 @@ input, select, textarea {
 		}
 
 /* Spotlights */
-
+/* section to modify */
 	.spotlights > section {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2997,6 +2997,9 @@ input, select, textarea {
 		-ms-flex-direction: row;
 		flex-direction: row;
 		min-height: 22.5em;
+		width: 100%; /* added */
+		background-size: cover; /* added */
+    	background-position: center; /* added */
 	}
 
 		body.is-ie .spotlights > section {
@@ -3009,7 +3012,7 @@ input, select, textarea {
 			border-radius: 0;
 			display: block;
 			position: relative;
-			width: 25em;
+			width: 100%;
 		}
 
 			.spotlights > section > .image img {
@@ -3049,6 +3052,7 @@ input, select, textarea {
 			justify-content: center;
 			width: 50em;
 			-ms-flex: 1;
+			position: relative; /* added */
 		}
 
 			.spotlights > section > .content > .inner {
@@ -3130,7 +3134,7 @@ input, select, textarea {
 			}
 
 		}
-
+/* end of modification */
 /* Table */
 
 	.table-wrapper {
