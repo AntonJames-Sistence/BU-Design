@@ -3000,40 +3000,28 @@ input, select, textarea {
 		width: 100%; /* added */
 		background-size: cover; /* added */
     	background-position: center; /* added */
+		position: relative;
 	}
 
-		body.is-ie .spotlights > section {
-			min-height: 0;
-		}
 
-		.spotlights > section > .image {
-			background-position: center center;
-			background-size: cover;
-			border-radius: 0;
-			display: block;
-			position: relative;
-			width: 100%;
-		}
-
-			.spotlights > section > .image img {
-				border-radius: 0;
-				display: block;
-			}
-
-			.spotlights > section > .image:before {
-				-moz-transition: opacity 1s ease;
-				-webkit-transition: opacity 1s ease;
-				-ms-transition: opacity 1s ease;
-				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+			.spotlights > section:before { /* Added */
 				content: '';
-				display: block;
-				height: 100%;
-				left: 0;
-				opacity: 0;
 				position: absolute;
 				top: 0;
+				left: 0;
 				width: 100%;
+				height: 100%;
+				background: rgba(156, 156, 235, 0.5);
+				-moz-transition: opacity 0.5s ease;
+				-webkit-transition: opacity 0.5s ease;
+				-ms-transition: opacity 0.5s ease;
+				transition: opacity 0.5s ease;
+				z-index: 1; 
+				pointer-events: none;
+			}
+			
+			.spotlights > section:hover:before {
+				opacity: 0; /* Change opacity to 0 on hover */
 			}
 
 		.spotlights > section > .content {
@@ -3053,6 +3041,7 @@ input, select, textarea {
 			width: 50em;
 			-ms-flex: 1;
 			position: relative; /* added */
+			z-index: 2; /* added */
 		}
 
 			.spotlights > section > .content > .inner {
@@ -3067,13 +3056,13 @@ input, select, textarea {
 				opacity: 1;
 			}
 
-		.spotlights > section:nth-child(2) {
+		/* .spotlights > section:nth-child(2) {
 			background-color: rgba(0, 0, 0, 0.05);
 		}
 
 		.spotlights > section:nth-child(3) {
 			background-color: rgba(0, 0, 0, 0.1);
-		}
+		} */
 
 		.spotlights > section.inactive > .image:before,
 		body.is-preload .spotlights > section > .image:before {
@@ -3101,6 +3090,7 @@ input, select, textarea {
 
 			.spotlights > section {
 				display: block;
+				background-size: cover;
 			}
 
 				.spotlights > section > .image {
