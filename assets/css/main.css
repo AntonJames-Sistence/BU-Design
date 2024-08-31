@@ -118,6 +118,20 @@ ul {
   list-style: none;
 }
 
+.logo-min {
+  height: 2rem;
+  width: auto;
+}
+#header > a {
+	border-bottom: none;
+}
+@media (max-width: 480px) {
+	.logo-min {
+	  height: 1rem;
+	  margin-top: 1rem;
+	}
+  }
+
 .logo-image {
   height: 8rem;
   width: auto;
