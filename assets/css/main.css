@@ -137,6 +137,9 @@ ul {
     height: 2rem;
   }
 }
+.white-text > h2, .white-text > p {
+	color: white;
+}
 
 blockquote,
 q {
@@ -1952,7 +1955,7 @@ button,
   border: solid 1px !important;
   border-color: rgba(255, 255, 255, 0.15) !important;
   border-radius: 3em;
-  color: #ffffff !important;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-size: 0.6em;
@@ -3116,7 +3119,8 @@ header h6 + p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(156, 156, 235, 0.5);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 100%);
+  transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
   -ms-transition: opacity 0.5s ease;
@@ -3125,9 +3129,9 @@ header h6 + p {
   pointer-events: none;
 }
 
-.spotlights > section:hover:before {
-  opacity: 0; /* Change opacity to 0 on hover */
-}
+/* .spotlights > section:hover:before {
+  opacity: 0;
+} */
 
 .spotlights > section > .content {
   padding: 4em 5em 2em 5em;
