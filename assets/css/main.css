@@ -123,14 +123,14 @@ ul {
   width: auto;
 }
 #header > a {
-	border-bottom: none;
+  border-bottom: none;
 }
 @media (max-width: 480px) {
-	.logo-min {
-	  height: 1rem;
-	  margin-top: 1rem;
-	}
+  .logo-min {
+    height: 1rem;
+    margin-top: 1rem;
   }
+}
 
 .logo-image {
   height: 8rem;
@@ -151,8 +151,9 @@ ul {
     height: 2rem;
   }
 }
-.white-text > h2, .white-text > p {
-	color: white;
+.white-text > h2,
+.white-text > p {
+  color: white;
 }
 
 blockquote,
@@ -3133,7 +3134,11 @@ header h6 + p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.6) 30%,
+    rgba(0, 0, 0, 0) 100%
+  );
   transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
@@ -3989,4 +3994,12 @@ body.is-preload #sidebar nav ul li {
   #intro {
     background-attachment: scroll;
   }
+}
+
+.custom-icon {
+  width: 100%;
+  height: auto;
+  max-width: 1.8em; /* Adjust size as needed */
+  display: block;
+  margin: 5px 0px 0px 7px;
 }
